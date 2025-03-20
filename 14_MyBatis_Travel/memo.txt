@@ -1,0 +1,33 @@
+drop table travel;
+create table travel(
+	num number primary key,
+	name varchar2(10),
+	age number,
+	area varchar2(30),
+	style varchar2(15),
+	price varchar2(10)
+);
+
+drop sequence travel_seq;
+create sequence travel_seq 
+minvalue 1
+start with 1
+nocache;
+
+insert into travel
+values(travel_seq.nextval, '수지',21, '동남아','패키지','200~300');
+
+commit;
+select * from travel;
+
+
+*.tv요청
+travel @Controller
+web-inf/travel/list.jsp
+
+1.pom.xml (실행하면 pom.xml훑음)
+2.web.xml
+3.root-context.xml
+xml 2가지 만들고 파일안에 일부 코드(Doctype~) 작성 - 실행 Hello World
+4. web.xml에서 *.tv => servlet mapping 설정
+5. travel-servlet.xml 작성

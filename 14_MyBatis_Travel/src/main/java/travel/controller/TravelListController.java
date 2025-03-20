@@ -59,7 +59,7 @@ public class TravelListController {
 		mav.setViewName(getPage);
 		
 		return mav;
-		// kim 추가함
+		// kim도 수정함
 		// kim 추가함
 		// kim 추가함
 	}

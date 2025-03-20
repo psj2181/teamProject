@@ -24,13 +24,14 @@ public class TravelInsertController {
 	private TravelDao travelDao;
 	
 	// travelList.jsp에서 추가하기 클릭
-	// travelList.jsp에서 추가하기 클릭
+	// kim 수정
+	// kim 한줄 추가
+	// kim 한줄 추가
 	@RequestMapping(value = command,method = RequestMethod.GET)
 	public String doActionGet() {
 		return getPage;
 	}
 	
-	// 삭제하고 한줄 추가
 	@RequestMapping(value = command,method = RequestMethod.POST)
 	public ModelAndView doActionPost(@ModelAttribute("travel") @Valid TravelBean travel, BindingResult result) {
 		
